@@ -17,10 +17,14 @@ export class FirebaseService {
   }
   getListingDetails(id)
 {
-   this.listing= this.af.list('/listings/' +id) as FirebaseListObservable<Listing>
+   this.listing = this.af.list('/listings/' +id) as FirebaseListObservable<Listing>
    return this.listing; 
   
-}}
+}
+addListing(listing){
+
+}
+}
 interface Listing{
   $ket?:string;
   title?:String;
